@@ -1,0 +1,23 @@
+.app {
+    height: 100vh;
+    padding: 10px;
+    background-color: #303030;
+    color: #fefefe;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (min-width: 992px) {
+	.app {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+	}
+}

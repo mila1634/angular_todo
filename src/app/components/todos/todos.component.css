@@ -1,0 +1,79 @@
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	border-bottom: 1px solid #979797;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	display: none;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+	cursor: pointer;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+form {
+	display: flex;
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding: 10px 15px;
+	margin-top: 15px;
+	font-size: 20px;
+
+	background: #303030;
+	box-shadow: inset 8px 8px 100px #232323,
+				inset -8px -8px 100px #3d3d3d;
+
+	outline: none;
+	appearance: none;
+	border: none;
+}
+
+.todo-input:focus {
+	color: #fefefe;
+}
+
+.todo-submit {
+	display: block;
+	height: 50px;
+	width: 50px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #8349eb;
+	color: #fefefe;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+.delete {
+	padding: 3px;
+	font-size: 10px;
+
+	border-radius: 0px;
+	background: #ffffff;
+	box-shadow: inset 5px 5px 42px #ebebeb,
+				inset -5px -5px 42px #ffffff;
+
+	border: none;
+	cursor: pointer;
+}
+
